@@ -1,0 +1,7 @@
+(module
+    (import s "./imp-sub.source")
+
+    (s::p1)
+    (writeChar 32)
+    (s::p2)
+)

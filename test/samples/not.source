@@ -1,0 +1,26 @@
+(module
+    (var a (readDigit))
+    (var b (readDigit))
+    (var c (readDigit))
+
+    (var notA (not a))
+    (var notB (not b))
+    (var notC (not c))
+
+    (var bitwiseNotA (bitNot a))
+    (var bitwiseNotB (bitNot b))
+    (var bitwiseNotC (bitNot c))
+
+    (writeNumber notA)
+    (writeChar 32)
+    (writeNumber notB)
+    (writeChar 32)
+    (writeNumber notC)
+    (writeChar 32)
+
+    (writeNumber bitwiseNotA)
+    (writeChar 32)
+    (writeNumber bitwiseNotB)
+    (writeChar 32)
+    (writeNumber bitwiseNotC)
+)

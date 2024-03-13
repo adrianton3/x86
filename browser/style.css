@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-color: hsl(70deg 8% 10%);
+}
+
+#container {
+    display: inline-block;
+    width: 2048px;
+}
+
+#editor-source,#editor-ast,#editor-asm {
+    display: inline-block;
+    width: 640px;
+    height: 1024px;
+}

@@ -1,0 +1,15 @@
+(module
+    (proc p2 (n a b)
+        (inc n)
+        (set n (+ n a))
+        (set n (+ n b))
+        (writeNumber n)
+    )
+
+    (proc p1 (n)
+        (inc n)
+        (p2 n n n)
+    )
+
+    (p1 1)
+)

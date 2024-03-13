@@ -1,0 +1,13 @@
+(module
+    (if (< 11 22) (writeNumber 123))
+    (writeChar 32)
+    (if (<= 33 44) (writeNumber 234))
+    (writeChar 32)
+    (if (== 55 66) (writeNumber 987))
+    ; (writeChar 32)
+    (if (== 77 77) (writeNumber 345))
+    (writeChar 32)
+    (if (>= 22 11) (writeNumber 456))
+    (writeChar 32)
+    (if (> 44 33) (writeNumber 567))
+)

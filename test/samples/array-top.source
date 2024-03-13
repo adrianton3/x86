@@ -1,0 +1,11 @@
+(module
+    (array a 256)
+
+    (set (at a 2) 123)
+    (writeNumber (at a 2))
+    (writeChar 32)
+
+    (var i 2)
+    (set (at a i) 234)
+    (writeNumber (at a i))
+)

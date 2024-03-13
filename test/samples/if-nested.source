@@ -1,0 +1,11 @@
+(module
+    (fun f (a)
+        (if (< a 5)
+            (if (< a 3) (return 9) (return 8))
+            (return 4)
+        )
+    )
+
+    (var c (f 4))
+    (writeNumber c)
+)

@@ -1,0 +1,5 @@
+test/samples/*.e
+test/samples/*.o
+test/samples/*.json
+test/samples/*.nasm
+test/samples/*.out

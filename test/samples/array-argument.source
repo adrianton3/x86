@@ -1,0 +1,12 @@
+(module
+    (array arr 256)
+
+    (proc f (a)
+        (writeNumber (at a 3))
+        (writeChar 32)
+        (writeNumber (at a 3))
+    )
+
+    (set (at arr 3) 345)
+    (f arr)
+)

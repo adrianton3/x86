@@ -1,0 +1,11 @@
+(module
+    (proc p1 ()
+        (writeNumber 123)
+    )
+
+    (proc p2 ()
+        (writeNumber 234)
+    )
+
+    (export p1 p2)
+)

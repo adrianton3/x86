@@ -1,0 +1,9 @@
+(module
+    (array a 10)
+
+    (set (at a 3) 5)
+
+    (var n (at (+ a 16) 1))
+
+    (writeNumber n)
+)

@@ -1,0 +1,11 @@
+(module
+    (var i 15)
+
+    (while (> i 0)
+        (writeNumber i)
+        (writeChar 32)
+        (dec i)
+    )
+
+    (writeNumber i)
+)

@@ -1,0 +1,17 @@
+(module
+    (var a 5)
+    (inc a)
+    (inc a)
+    (writeNumber a)
+
+    (var b 5)
+    (dec b)
+    (writeNumber b)
+
+    (array c 10)
+    (set (at c 0) 5)
+    (inc (at c 0))
+    (inc (at c 0))
+    (inc (at c 0))
+    (writeNumber (at c 0))
+)

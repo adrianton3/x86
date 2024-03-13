@@ -1,0 +1,8 @@
+(module
+    (var a (readDigit))
+    (var b (readDigit))
+
+    (var c (* a b))
+
+    (writeNumber c)
+)

@@ -1,0 +1,14 @@
+(module
+    (fun g (a)
+        (inc a)
+        (return a)
+    )
+
+    (fun f (a b)
+        (var ap1 (g a))
+        (return (+ ap1 b))
+    )
+
+    (var c (f 4 2))
+    (writeNumber c)
+)

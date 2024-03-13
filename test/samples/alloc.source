@@ -1,0 +1,15 @@
+(module
+    (var addr (alloc 256))
+
+    (set (at addr 2) 134)
+    (set (at addr 3) 145)
+    (set (at addr 4) 156)
+
+    (var i 0)
+    (while (< i 10)
+        (writeNumber (at addr i))
+        (writeChar 32)
+        (inc i)
+    )
+    (writeNumber (at addr i))
+)

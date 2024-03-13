@@ -1,0 +1,5 @@
+(module
+    (var a (+ 1 (bitNot (bitNot (* 2 3)))))
+
+    (writeNumber a)
+)

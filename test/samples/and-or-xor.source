@@ -1,0 +1,12 @@
+(module
+    (var a (readDigit))
+    (var b (readDigit))
+
+    (var andResult (bitAnd a b))
+    (var orResult (bitOr a b))
+    (var xorResult (bitXor a b))
+
+    (writeNumber andResult)
+    (writeNumber orResult)
+    (writeNumber xorResult)
+)

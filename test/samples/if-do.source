@@ -1,0 +1,11 @@
+(module
+    (if (< 11 22)
+        (do (writeNumber 12) (writeNumber 23))
+        (do (writeNumber 98) (writeNumber 87))
+    )
+    (writeChar 32)
+    (if (> 11 22)
+        (do (writeNumber 76) (writeNumber 65))
+        (do (writeNumber 34) (writeNumber 45))
+    )
+)

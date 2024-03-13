@@ -1,0 +1,15 @@
+(module
+    (var sum 0)
+    (var i 0)
+
+    (while (< i 20)
+        (inc i)
+        (if (< i 5) (continue))
+        (if (> i 10) (break))
+        (set sum (+ sum i))
+    )
+
+    (writeNumber i)
+    (writeChar 32)
+    (writeNumber sum)
+)

@@ -1,0 +1,15 @@
+(module
+    (var sum 0)
+
+    (proc p (n)
+        (if (> n 0) (do
+            (set sum (+ sum n))
+            (dec n)
+            (p n)
+        ))
+    )
+
+    (p 10)
+
+    (writeNumber sum)
+)

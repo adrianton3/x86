@@ -1,0 +1,23 @@
+(module
+    (fun fib (n)
+        (if (== n 0) (return 0))
+
+        (if (== n 1) (return 1))
+
+        (dec n)
+        (var nm1 (fib n))
+
+        (dec n)
+        (var nm2 (fib n))
+
+        (return (+ nm1 nm2))
+    )
+
+    (var f7 (fib 7))
+    (writeNumber f7)
+
+    (writeChar 32)
+
+    (var f8 (fib 8))
+    (writeNumber f8)
+)

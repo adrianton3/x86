@@ -1,0 +1,23 @@
+(module
+    (array a 2)
+
+    (fun f (n)
+        (inc n)
+        (return n)
+    )
+
+    (fun g (n)
+        (set n (+ n 2))
+        (return n)
+    )
+
+    (set (at a 0) f)
+    (set (at a 1) g)
+
+    (var a0 ((at a 0) 2))
+    (var a1 ((at a 1) 3))
+
+    (var s (+ a0 a1))
+
+    (writeNumber s)
+)

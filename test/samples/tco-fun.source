@@ -1,0 +1,15 @@
+(module
+    (fun f (n s)
+        (if (> n 0) (do
+            (set s (+ s n))
+            (dec n)
+            (return (f n s))
+        ))
+
+        (return s)
+    )
+
+    (var sum (f 10 0))
+
+    (writeNumber sum)
+)
