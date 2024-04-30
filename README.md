@@ -7,12 +7,17 @@ There is only one data type: 64-bit unsigned integer (that are also be used as m
 Basic optimizations for `*`, `/` and `%` are performed; tail calls (recursive and sibling) are optimized away as well.
 
 
+#### Parse/codegen demo
+
+[https://adrianton3.github.io/x86/browser](https://adrianton3.github.io/x86/browser)
+
+
 #### Sample
 
 ```
 ;; sub.source -----------------------------------------------------------------
 
-(module sub
+(module
     (fun min (a b)
         (if (< a b)
             (return a)
@@ -37,7 +42,7 @@ Basic optimizations for `*`, `/` and `%` are performed; tail calls (recursive an
 
 ;; main.source ----------------------------------------------------------------
 
-(module m
+(module
     (import s "./sub.source")
 
     (var v1)
